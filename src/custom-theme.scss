@@ -1,0 +1,47 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$candy-app-light-primary: mat-palette($mat-orange, 600);
+$candy-app-light-accent:  mat-palette($mat-blue, 800);
+$candy-app-light-warn:    mat-palette($mat-red, 500);
+
+
+$candy-app-light-theme: mat-light-theme((
+  color: (
+    primary: $candy-app-light-primary,
+    accent: $candy-app-light-accent,
+    warn: $candy-app-light-warn,
+  )
+));
+
+
+$candy-app-dark-primary: mat-palette($mat-green, A200);
+$candy-app-dark-accent:  mat-palette($mat-purple, A700);
+$candy-app-dark-warn:    mat-palette($mat-red, A400);
+
+
+$candy-app-dark-theme: mat-dark-theme((
+  color: (
+    primary: $candy-app-dark-primary,
+    accent: $candy-app-dark-accent,
+    warn: $candy-app-dark-warn,
+  )
+));
+@include angular-material-theme($candy-app-dark-theme);
+
+
+.light-theme {
+  @include angular-material-theme($candy-app-light-theme);
+  background-color: #fff;
+  color: #111;
+}
+
+.dark-theme {
+  @include angular-material-theme($candy-app-dark-theme);
+  background-color: #444;
+  color: green;
+}
