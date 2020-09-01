@@ -7,8 +7,7 @@ import { AppComponent } from './app.component';
 
 import { SharedModule } from './shared/shared.module'
 
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
+import { MaterialModule } from './material/material.module';
 import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
@@ -21,8 +20,7 @@ import { HomeComponent } from './components/home/home.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
-    MatButtonModule,
-    MatCardModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
