@@ -1,16 +1,16 @@
-<mat-toolbar fxLayout="row" color="primary">
+<mat-toolbar fxLayout="row" color="basic">
 
   <span fxFlex>  Deividev</span>
-  <button mat-button *ngFor="let item of menuItems" fxHide.xs>
+  <button mat-button *ngFor="let item of menuItems" fxHide.xs color="primary">
       <mat-icon class="mr">{{item.icon}}</mat-icon>
       {{item.label}}
   </button>
-  <button mat-icon-button [matMenuTriggerFor]="dropMenu" fxHide fxShow.xs>
+  <button mat-icon-button [matMenuTriggerFor]="dropMenu" fxHide fxShow.xs color="primary">
       <mat-icon>more_vert</mat-icon>
   </button>
   <mat-menu #dropMenu="matMenu">
-      <ng-container *ngFor="let item of menuItems">
-          <button mat-menu-item>
+      <ng-container *ngFor="let item of menuItems" >
+          <button mat-menu-item >
               <mat-icon class="mr">{{item.icon}}</mat-icon>
               {{item.label}}
           </button>
