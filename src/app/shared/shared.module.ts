@@ -5,10 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
 
 //Material
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
-
+import { MaterialModule } from '../material/material.module'
 @NgModule({
   declarations: [
     HeaderComponent
@@ -17,9 +14,7 @@ import { MatButtonModule } from '@angular/material/button';
     CommonModule,
     RouterModule,
     ReactiveFormsModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
+    MaterialModule
   ],
   exports:  [
     HeaderComponent,
