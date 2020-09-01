@@ -1,15 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+//Components
+import { HomeComponent } from './components/home/home.component';
+
 const routes: Routes = [
-  {
-    path: 'home',
-    loadChildren: () => import('./shared/shared.module').then(m => m.SharedModule)
-  },
-  {
-    path: '"',
-    redirectTo: 'home'
-  }
+  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
 
 @NgModule({
