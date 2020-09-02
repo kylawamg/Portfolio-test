@@ -1,8 +1,11 @@
-<section class="cover">
+<section class="cover mat-drawer-container">
   <div class="container">
-    <mat-card>
-      <h3></h3>
-      <mat-card-title>Soy david</mat-card-title>
+    <mat-card  [class.mat-elevation-z2]="isActive">
+      <mat-card-header>
+        <mat-card-title>
+          David
+        </mat-card-title>
+      </mat-card-header>
       <mat-card-subtitle>Full Stack JS developer</mat-card-subtitle>
       <mat-card-content>Angular, Vue</mat-card-content>
       <mat-card-actions>
@@ -10,7 +13,7 @@
       </mat-card-actions>
       <mat-card-footer></mat-card-footer>
     </mat-card>
-    <mat-card>
+    <mat-card [class.mat-elevation-z2]="isActive">
       <p>Javacript, Angular, Vue</p>
     </mat-card>
   </div>

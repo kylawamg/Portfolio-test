@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cover.component.scss']
 })
 export class CoverComponent implements OnInit {
-
+  isActive = true;
   constructor() { }
 
   ngOnInit(): void {
