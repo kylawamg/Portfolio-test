@@ -1,6 +1,6 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { MenuItem } from '../../../models/menu-item';
-import { OverlayContainer } from '@angular/cdk/overlay';
+import { AppComponent } from '../../../app.component'
 
 @Component({
   selector: 'app-header',
@@ -28,16 +28,14 @@ export class HeaderComponent implements OnInit {
     },
   ];
 
-  @HostBinding('class') componentCssClass: any;
 
-  constructor( public overlayContainer: OverlayContainer) { }
+
+  constructor(private compTheme: AppComponent ) { }
   ngOnInit(): void {
   }
 
-
-  public onSetTheme(nameClass: string) {
-    this.overlayContainer.getContainerElement().classList.add(nameClass);
-    this.componentCssClass = nameClass;
+  public changeTheme(nameClass): void {
+    this.compTheme.onSetTheme(nameClass);
   }
 
 }
