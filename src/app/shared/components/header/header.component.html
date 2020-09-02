@@ -1,6 +1,8 @@
-<mat-toolbar fxLayout="row" color="basic">
+<mat-toolbar fxLayout="row">
 
   <span fxFlex>  Deividev</span>
+  <button mat-gbutton (click)="onSetTheme('dark-theme')">Dark theme</button>
+  <button mat-gbutton (click)="onSetTheme('light-theme')">Light theme</button>
   <button mat-button *ngFor="let item of menuItems" fxHide.xs color="primary">
       <mat-icon class="mr">{{item.icon}}</mat-icon>
       {{item.label}}
