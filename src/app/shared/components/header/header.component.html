@@ -1,5 +1,7 @@
 <mat-toolbar fxLayout="row">
-  <span fxFlex>  Deividev</span>
+  <span fxFlex> Deividev</span>
+  <button mat-button (click)="changeTheme('light-theme')" >Light theme</button>
+  <button mat-button (click)="changeTheme('dark-theme')" >Dark theme</button>
   <button mat-button *ngFor="let item of menuItems" fxHide.xs color="primary">
       <mat-icon class="mr">{{item.icon}}</mat-icon>
       {{item.label}}
@@ -16,8 +18,6 @@
           </button>
           <mat-divider></mat-divider>
       </ng-container>
-      <button mat-menu-item (click)="changeTheme('dark-theme')" >Dark theme</button>
-      <mat-divider></mat-divider>
-      <button mat-menu-item (click)="changeTheme('light-theme')">Light theme</button>
+
   </mat-menu>
 </mat-toolbar>
