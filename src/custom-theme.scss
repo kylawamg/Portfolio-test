@@ -36,12 +36,8 @@ $candy-app-dark-theme: mat-dark-theme((
 
 .light-theme {
   @include angular-material-theme($candy-app-light-theme);
-  background-color: #fff;
-  color: #111;
 }
 
 .dark-theme {
   @include angular-material-theme($candy-app-dark-theme);
-  background-color: #444;
-  color: green;
 }
