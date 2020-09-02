@@ -20,6 +20,7 @@ import { CoverComponent } from './components/cover/cover.component'
   ],
   exports:  [
     HeaderComponent,
+    CoverComponent
   ]
 })
 export class SharedModule { }
