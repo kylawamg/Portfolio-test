@@ -1,14 +1,17 @@
 .cover {
   height: 250px;
-  background-color: #999;
+  // background-color: #999;
   padding: 15px;
-}
-.container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .mat-card {
-  margin: 0 4px;
+  margin: 0 20px;
 }
