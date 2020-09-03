@@ -1,11 +1,15 @@
 <mat-toolbar fxLayout="row">
   <span fxFlex> Deividev</span>
+  Change theme
   <mat-slide-toggle
     class="example-margin"
     color="accent"
     [checked]="checked"
     (click)="changeTheme('light-theme')"
-    [ngClass]="checked ? 'light-theme' : 'dark-theme'"Change theme
+    [ngClass]="{
+      'light-theme' : !checked,
+      'dark-theme' : checked
+    }"
     >
 
   </mat-slide-toggle>

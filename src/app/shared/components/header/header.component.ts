@@ -35,10 +35,11 @@ export class HeaderComponent implements OnInit {
   }
 
   public changeTheme(nameClass): void {
-    !this.checked
-    this.compTheme.onSetTheme(nameClass);
-
-
+    this.checked = !this.checked;
+    if (!this.checked){
+      this.compTheme.onSetTheme(nameClass);
+    } if (this.checked) {
+      this.compTheme.onSetTheme('dark-theme');
+    }
   }
-
 }
