@@ -28,14 +28,17 @@ export class HeaderComponent implements OnInit {
     },
   ];
 
-
+  checked = true;
 
   constructor(private compTheme: AppComponent ) { }
   ngOnInit(): void {
   }
 
   public changeTheme(nameClass): void {
+    !this.checked
     this.compTheme.onSetTheme(nameClass);
+
+
   }
 
 }

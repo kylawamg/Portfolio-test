@@ -17,7 +17,6 @@ import { CoverComponent } from './components/cover/cover.component'
     RouterModule,
     ReactiveFormsModule,
     MaterialModule,
-
   ],
   exports:  [
     HeaderComponent,
