@@ -8,8 +8,7 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module'
 
 import { MaterialModule } from './material/material.module';
-import { HomeComponent } from './components/home/home.component';
-
+import { HomeComponent } from './pages/home/home.component';
 @NgModule({
   declarations: [
     AppComponent,

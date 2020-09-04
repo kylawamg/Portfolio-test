@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { MenuItem } from '../../../models/menu-item'
+import { Component, OnInit} from '@angular/core';
+import { MenuItem } from '../../../models/menu-item';
+import { AppComponent } from '../../../app.component'
 
 @Component({
   selector: 'app-header',
@@ -27,8 +28,18 @@ export class HeaderComponent implements OnInit {
     },
   ];
 
-  constructor() { }
+  checked = true;
+
+  constructor(private compTheme: AppComponent ) { }
   ngOnInit(): void {
   }
 
+  public changeTheme(nameClass): void {
+    this.checked = !this.checked;
+    if (!this.checked){
+      this.compTheme.onSetTheme(nameClass);
+    } if (this.checked) {
+      this.compTheme.onSetTheme('dark-theme');
+    }
+  }
 }

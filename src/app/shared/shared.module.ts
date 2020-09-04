@@ -5,19 +5,22 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
 
 //Material
-import { MaterialModule } from '../material/material.module'
+import { MaterialModule } from '../material/material.module';
+import { CoverComponent } from './components/cover/cover.component'
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    CoverComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
     ReactiveFormsModule,
-    MaterialModule
+    MaterialModule,
   ],
   exports:  [
     HeaderComponent,
+    CoverComponent
   ]
 })
 export class SharedModule { }

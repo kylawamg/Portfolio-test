@@ -8,6 +8,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 @NgModule({
   imports:  [
@@ -18,6 +19,7 @@ import {MatDividerModule} from '@angular/material/divider';
     FlexLayoutModule,
     MatDividerModule,
     MatMenuModule,
+    MatSlideToggleModule
   ],
   exports: [
     MatButtonModule,
@@ -27,6 +29,7 @@ import {MatDividerModule} from '@angular/material/divider';
     FlexLayoutModule,
     MatDividerModule,
     MatMenuModule,
+    MatSlideToggleModule
   ]
 })
 
