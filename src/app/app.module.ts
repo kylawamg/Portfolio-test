@@ -9,6 +9,7 @@ import { SharedModule } from './shared/shared.module'
 
 import { MaterialModule } from './material/material.module';
 import { HomeComponent } from './pages/home/home.component';
+import { ProjectsModule } from './features/projects/projects.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { HomeComponent } from './pages/home/home.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
-    MaterialModule
+    MaterialModule,
+    ProjectsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

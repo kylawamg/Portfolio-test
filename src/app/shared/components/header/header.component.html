@@ -1,5 +1,5 @@
 <mat-toolbar fxLayout="row">
-  <span fxFlex> Deividev</span>
+  <span fxFlex routerLink="/home"> Deividev</span>
   Change theme
   <app-slide-toggle></app-slide-toggle>
   <!-- <button mat-button (click)="changeTheme('light-theme')" >Light theme</button>
@@ -14,10 +14,10 @@
 
   <mat-menu #dropMenu="matMenu" color="primary">
       <ng-container *ngFor="let item of menuItems">
-          <button mat-menu-item >
+          <a [routerLink]="['/', item.route]" mat-menu-item >
               <mat-icon class="mr">{{item.icon}}</mat-icon>
               {{item.label}}
-          </button>
+          </a>
           <mat-divider></mat-divider>
       </ng-container>
   </mat-menu>
