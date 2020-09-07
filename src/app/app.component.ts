@@ -11,7 +11,6 @@ export class AppComponent {
 
   @HostBinding('class') componentCssClass: any;
 
-
   constructor(public overlayContainer: OverlayContainer) {}
 
   public onSetTheme(nameClass: string) {
