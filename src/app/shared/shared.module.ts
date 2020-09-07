@@ -3,14 +3,17 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
+import { CoverComponent } from './components/cover/cover.component'
+import { SlideToggleComponent } from './components/slide-toggle/slide-toggle.component'
 
 //Material
 import { MaterialModule } from '../material/material.module';
-import { CoverComponent } from './components/cover/cover.component'
+
 @NgModule({
   declarations: [
     HeaderComponent,
-    CoverComponent
+    CoverComponent,
+    SlideToggleComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +23,7 @@ import { CoverComponent } from './components/cover/cover.component'
   ],
   exports:  [
     HeaderComponent,
-    CoverComponent
+    CoverComponent,
   ]
 })
 export class SharedModule { }

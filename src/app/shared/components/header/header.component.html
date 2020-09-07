@@ -1,18 +1,7 @@
 <mat-toolbar fxLayout="row">
   <span fxFlex> Deividev</span>
   Change theme
-  <mat-slide-toggle
-    class="example-margin"
-    color="accent"
-    [checked]="checked"
-    (click)="changeTheme('light-theme')"
-    [ngClass]="{
-      'light-theme' : !checked,
-      'dark-theme' : checked
-    }"
-    >
-
-  </mat-slide-toggle>
+  <app-slide-toggle></app-slide-toggle>
   <!-- <button mat-button (click)="changeTheme('light-theme')" >Light theme</button>
   <button mat-button (click)="changeTheme('dark-theme')" >Dark theme</button> -->
   <button mat-button *ngFor="let item of menuItems" fxHide.xs color="primary">
