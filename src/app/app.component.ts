@@ -13,8 +13,14 @@ export class AppComponent {
 
   constructor(public overlayContainer: OverlayContainer) {}
 
+  ngOnInit(): void {
+
+  }
+
   public onSetTheme(nameClass: string) {
     this.overlayContainer.getContainerElement().classList.add(nameClass);
     this.componentCssClass = nameClass;
   }
+
+
 }
