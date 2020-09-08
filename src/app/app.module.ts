@@ -8,6 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 
 import { SharedModule } from './shared/shared.module'
 import { MaterialModule } from './material/material.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -22,6 +23,7 @@ import { MaterialModule } from './material/material.module';
     BrowserAnimationsModule,
     SharedModule,
     MaterialModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
