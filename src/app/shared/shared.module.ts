@@ -8,6 +8,8 @@ import { SlideToggleComponent } from './components/slide-toggle/slide-toggle.com
 
 //Material
 import { MaterialModule } from '../material/material.module';
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faStackOverflow, faGithub, faMedium, faInstagram, faInstagramSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @NgModule({
   declarations: [
@@ -20,10 +22,15 @@ import { MaterialModule } from '../material/material.module';
     RouterModule,
     ReactiveFormsModule,
     MaterialModule,
+    FontAwesomeModule
   ],
   exports:  [
     HeaderComponent,
     CoverComponent,
   ]
 })
-export class SharedModule { }
+export class SharedModule {
+  constructor( private library: FaIconLibrary ){
+    library.addIcons(faStackOverflow, faGithub, faMedium, faInstagram, faInstagramSquare, faLinkedin);
+  }
+}
