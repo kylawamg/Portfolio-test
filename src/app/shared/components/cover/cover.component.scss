@@ -1,27 +1,39 @@
 .cover {
   height: 100vh;
   padding: 75px 15px;
-  // display: flex;
-  // justify-content: center;
-  // align-items: space-around;
-  // border-bottom: 1px solid #666;
 }
 .container {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  // align-items: center;
-  // padding: 10px;
+}
+
+.container-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .mat-card {
+  max-width: 500px;
   margin: 0 5px;
   padding: 20px;
 }
 
+.mat-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.mat-icon-button {
+  width: 60px;
+  height: 60px;
+}
+
+.mat-icon.mat-primary:hover {
+  color: #331c00;
+  cursor: pointer;
+}
 
 .mat-icon {
-  width: 40px;
-  height: 40px;
-  font-size: 35px;
+  font-size: 50px;
 }

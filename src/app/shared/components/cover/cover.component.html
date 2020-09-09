@@ -3,22 +3,36 @@
     <mat-card class="card"  [class.mat-elevation-z4]="isActive">
       <mat-card-header>
         <mat-card-title>
-          David
+          <h1>David Seco Diaz</h1>
         </mat-card-title>
-      </mat-card-header>
+
       <mat-card-subtitle>Full Stack JS developer</mat-card-subtitle>
-      <mat-card-content>Angular, Vue</mat-card-content>
+    </mat-card-header>
+      <mat-card-content>
+        <span>Frontend:</span>  Html, Css, Sass, Javascript, Angular, Vue.
+      </mat-card-content>
+      <mat-card-content>
+        UI: A-Material, Bootstrap, Quasar.
+      </mat-card-content>
+      <mat-card-content>
+        Backend: Node.js, Koa, Express, Mongodb.
+      </mat-card-content>
+      <mat-card-content>
+        Others: Firebase, Digital Ocean.
+      </mat-card-content>
+      <mat-card-content>
+        Tools: Git, Visual Studio Code, Figma, Trello, Jyra,
+      </mat-card-content>
       <mat-card-actions>
-        <button mat-button color="accent">Dark theme</button>
+        <button mat-raised-button color="accent">Dark theme</button>
       </mat-card-actions>
       <mat-card-footer></mat-card-footer>
     </mat-card>
-    <mat-card [class.mat-elevation-z2]="isActive">
-      <p>Javacript, Angular, Vue</p>
-    </mat-card>
   </div>
-  <div class="container">
-
+  <div class="container-icons">
+        <a mat-icon-button>
+          <mat-icon class="material-icons mr" color="primary"> <fa-icon [icon]="['far', 'envelope']"></fa-icon></mat-icon>
+        </a>
         <a mat-icon-button>
           <mat-icon class="material-icons mr" color="primary"> <fa-icon [icon]="['fab', 'instagram']"></fa-icon></mat-icon>
         </a>
