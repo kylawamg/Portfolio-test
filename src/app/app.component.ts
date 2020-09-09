@@ -11,11 +11,16 @@ export class AppComponent {
 
   @HostBinding('class') componentCssClass: any;
 
-
   constructor(public overlayContainer: OverlayContainer) {}
+
+  ngOnInit(): void {
+
+  }
 
   public onSetTheme(nameClass: string) {
     this.overlayContainer.getContainerElement().classList.add(nameClass);
     this.componentCssClass = nameClass;
   }
+
+
 }

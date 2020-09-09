@@ -33,7 +33,7 @@ $candy-app-dark-theme: mat-dark-theme((
     background-color: #666,
   )
 ));
-@include angular-material-theme($candy-app-dark-theme);
+@include angular-material-theme($candy-app-light-theme);
 
 
 .light-theme {
@@ -42,4 +42,14 @@ $candy-app-dark-theme: mat-dark-theme((
 
 .dark-theme {
   @include angular-material-theme($candy-app-dark-theme);
+  .dark-theme .mat-slide-toggle-thumb {
+    background-color: #aa00ff;
+  }
+  .dark-theme .mat-slide-toggle-bar {
+    background-color: rgba(170, 0, 255, 0.54);
+  }
 }
+
+
+
+
