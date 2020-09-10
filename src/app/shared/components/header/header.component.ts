@@ -23,7 +23,7 @@ export class HeaderComponent implements OnInit {
       icon: 'school'
     },
     {
-      label: 'Contact',
+      label: 'About',
       icon: 'mail'
     },
   ];
