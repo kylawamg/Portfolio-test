@@ -1,5 +1,5 @@
 {
-   "particles": {
+  "particles": {
     "number": {
       "value": 60,
       "density": {
@@ -8,7 +8,7 @@
       }
     },
     "color": {
-      "value": "#c5c5c5"
+      "value": "#959595"
     },
     "shape": {
       "type": "circle",
@@ -36,7 +36,7 @@
       }
     },
     "size": {
-      "value": 6,
+      "value": 5,
       "random": false,
       "anim": {
         "enable": false,

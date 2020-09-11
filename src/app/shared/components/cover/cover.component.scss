@@ -5,7 +5,7 @@
 .container {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 .container-icons {
@@ -15,9 +15,8 @@
 }
 
 .mat-card {
-  max-width: 500px;
   margin: 0 5px;
-  padding: 20px;
+  padding: 10px 15;
 }
 
 .mat-button-base {
@@ -30,7 +29,7 @@
 }
 
 .mat-icon.mat-primary:hover {
-  color: #331c00;
+  color: #111;
   cursor: pointer;
 }
 
