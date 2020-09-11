@@ -1,5 +1,6 @@
 import { Component, HostBinding } from '@angular/core';
 import { OverlayContainer } from '@angular/cdk/overlay';
+import { DownloadLibrariesService } from './services/downloadLibraries.service'
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,12 @@ export class AppComponent {
 
   @HostBinding('class') componentCssClass: any;
 
-  constructor(public overlayContainer: OverlayContainer) {}
+  constructor(public overlayContainer: OverlayContainer,
+              private loadScripts: DownloadLibrariesService)
+  {
+    loadScripts.loadScripts(["particles.min"]);
+    loadScripts.loadScripts(["app"]);
+  }
 
   ngOnInit(): void {
 
