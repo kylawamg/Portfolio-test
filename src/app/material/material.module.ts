@@ -9,7 +9,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
-import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   imports:  [
@@ -21,7 +20,6 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatDividerModule,
     MatMenuModule,
     MatSlideToggleModule,
-    MatGridListModule
   ],
   exports: [
     MatButtonModule,
@@ -32,7 +30,6 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatDividerModule,
     MatMenuModule,
     MatSlideToggleModule,
-    MatGridListModule
   ]
 })
 
