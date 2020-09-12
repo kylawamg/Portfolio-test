@@ -12,6 +12,4 @@ export class GridProjectsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  gridColumns = 2;
-
 }
