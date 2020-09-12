@@ -1,15 +1,38 @@
 .cover {
   height: 100vh;
-  padding: 15px;
+  padding: 75px 15px;
 }
 .container {
   display: flex;
-  justify-content: space-around;
-  padding: 10px;
+  justify-content: center;
+  margin: 20px;
+}
 
+.container-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .mat-card {
   margin: 0 5px;
-  padding: 20px;
+  padding: 10px 15;
+}
+
+.mat-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.mat-icon-button {
+  width: 60px;
+  height: 60px;
+}
+
+.mat-icon.mat-primary:hover {
+  color: #111;
+  cursor: pointer;
+}
+
+.mat-icon {
+  font-size: 50px;
 }
