@@ -4,11 +4,13 @@ import { GridProjectsComponent } from './grid-projects/grid-projects.component';
 import { ProjectsRoutingModule } from './projects-routing.module'
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MaterialModule } from 'src/app/material/material.module';
+import { CardProjectsComponent } from './card-projects/card-projects.component';
 
 
 @NgModule({
   declarations: [
-    GridProjectsComponent
+    GridProjectsComponent,
+    CardProjectsComponent
   ],
   imports: [
     CommonModule,
