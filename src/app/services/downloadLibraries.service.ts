@@ -9,7 +9,6 @@ export class DownloadLibrariesService {
 
   loadScripts(files: string[]) {
     for (let file of files) {
-      debugger
       let script = document.createElement('script');
       script.src = `./../assets/lib/${file}.js`;
       let body = document.getElementsByTagName("body")[0];

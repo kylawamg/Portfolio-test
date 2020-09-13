@@ -10,24 +10,19 @@ export class HeaderComponent implements OnInit {
 
   menuItems: MenuItem[] = [
     {
-      label: 'Projects',
+      label: 'About',
+      icon: 'assignment_ind',
+      route: 'about'
+    },
+    {
+      label: 'Works',
       icon: 'ad_units',
       route: 'projects'
     },
     {
-      label: 'Experience',
-      icon: 'work',
-      route: 'experience'
-    },
-    {
-      label: 'Education',
+      label: 'Resume',
       icon: 'school',
       route: 'education'
-    },
-    {
-      label: 'About',
-      icon: 'mail',
-      route: 'about'
     },
   ];
 
