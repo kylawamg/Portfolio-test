@@ -31,7 +31,7 @@ $candy-app-dark-theme: mat-dark-theme((
     background-color: #666,
   )
 ));
-@include angular-material-theme($candy-app-light-theme);
+@include angular-material-theme($candy-app-dark-theme);
 
 
 .light-theme {
@@ -53,4 +53,8 @@ $candy-app-dark-theme: mat-dark-theme((
   font-weight: 700;
   color: #fb8c00;
   text-transform: uppercase;
+}
+
+.mat-raised:button:hover {
+  color: #b66400;
 }

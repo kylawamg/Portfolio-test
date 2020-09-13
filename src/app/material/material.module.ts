@@ -19,7 +19,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     FlexLayoutModule,
     MatDividerModule,
     MatMenuModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
   ],
   exports: [
     MatButtonModule,
@@ -29,7 +29,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     FlexLayoutModule,
     MatDividerModule,
     MatMenuModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
   ]
 })
 

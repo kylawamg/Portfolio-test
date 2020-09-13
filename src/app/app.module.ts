@@ -12,7 +12,7 @@ import { HomeComponent } from './pages/home/home.component';
 
 import { SharedModule } from './shared/shared.module'
 import { MaterialModule } from './material/material.module';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ProjectsModule } from './features/projects/projects.module';
 //Inicio services libraries
 import { DownloadLibrariesService } from './services/downloadLibraries.service';
 
@@ -29,7 +29,7 @@ import { DownloadLibrariesService } from './services/downloadLibraries.service';
     BrowserAnimationsModule,
     SharedModule,
     MaterialModule,
-    FontAwesomeModule,
+    ProjectsModule
   ],
   providers: [
     DownloadLibrariesService,

@@ -5,6 +5,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
+
+  {
+    path: 'projects',
+    loadChildren: () => import('./features/projects/projects.module').then(m => m.ProjectsModule),
+  },
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
