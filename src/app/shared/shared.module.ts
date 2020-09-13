@@ -13,12 +13,14 @@ import { MaterialModule } from '../material/material.module';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faStackOverflow, faGithub, faMedium, faInstagram, faInstagramSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope as faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     CoverComponent,
-    SlideToggleComponent
+    SlideToggleComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -30,6 +32,7 @@ import { faEnvelope as faEnvelope } from '@fortawesome/free-regular-svg-icons';
   exports:  [
     HeaderComponent,
     CoverComponent,
+    FooterComponent
   ]
 })
 export class SharedModule {
