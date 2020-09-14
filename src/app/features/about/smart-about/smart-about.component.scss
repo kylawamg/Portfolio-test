@@ -1,4 +1,10 @@
+
 .mat-drawer-container {
-  height: 100vh;
   padding: 50px;
+}
+@media (min-width: 768px)  {
+  .mat-drawer-container {
+    height: 100%;
+    padding: 50px;
+  }
 }
