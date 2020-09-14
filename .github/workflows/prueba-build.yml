@@ -2,7 +2,7 @@ name : prueba-build
 on :
    push :
      branch :
-      - trabajos maestros
+      - master
  :
    construir :
 
@@ -11,7 +11,7 @@ on :
     pasos :
     - uses : actions / checkout @ v2 
     - name : All things angular 
-      uses : AhsanAyaz / angular-deploy-gh-pages-actions 
+      uses : Deividev / Portfolio-test 
       con :
         github_access_token : $ {{secrets.ACCESS_TOKEN}} # consulta la sección Configuración para saber cómo puedes crear secretos 
         build_configuration : src/environments/environment.prod.ts # El entorno de compilación de la aplicación. por favor mire las configuraciones en su angular.json 
