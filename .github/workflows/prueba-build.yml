@@ -1,0 +1,20 @@
+name : prueba-build
+on :
+   push :
+     branch :
+      - trabajos maestros
+ :
+   construir :
+
+    se ejecuta : ubuntu-latest
+
+    pasos :
+    - uses : actions / checkout @ v2 
+    - name : All things angular 
+      uses : AhsanAyaz / angular-deploy-gh-pages-actions 
+      con :
+        github_access_token : $ {{secrets.ACCESS_TOKEN}} # consulta la sección Configuración para saber cómo puedes crear secretos 
+        build_configuration : src/environments/environment.prod.ts # El entorno de compilación de la aplicación. por favor mire las configuraciones en su angular.json 
+        base_href : https: // Deividev .github.io / Portfolio-test/     # asegúrese de que esto corresponda a https: // <your_username> .github.io / <base_href> / 
+        deploy_branch : master # La rama en la que se debe implementar la acción. 
+        angular_dist_build_folder : dist / portfolio # La carpeta donde se supone que debe estar su proyecto después de ejecutar ng build by the action.
