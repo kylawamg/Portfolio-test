@@ -1,9 +1,8 @@
 name : prueba-build
 on :
    push :
-     branch :
+     branches :
       - master
- :
    construir :
 
     se ejecuta : ubuntu-latest
