@@ -32,7 +32,8 @@ import { FooterComponent } from './components/footer/footer.component';
   exports:  [
     HeaderComponent,
     CoverComponent,
-    FooterComponent
+    FooterComponent,
+    FontAwesomeModule
   ]
 })
 export class SharedModule {

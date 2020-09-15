@@ -11,3 +11,22 @@
   max-width: 1000px;
   margin-bottom: 20px;
 }
+
+.mat-expansion-panel {
+  margin-bottom: 15px;
+}
+
+.mat-accordion>.mat-expansion-panel-spacing:last-child {
+  margin-bottom: 15px;
+}
+
+
+.mat-icon-button {
+  width: 60px;
+  height: 60px;
+}
+
+.mat-icon.mat-primary:hover {
+  color: #111;
+  cursor: pointer;
+}
