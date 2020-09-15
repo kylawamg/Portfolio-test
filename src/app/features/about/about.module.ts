@@ -7,6 +7,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { SmartAboutComponent } from './smart-about/smart-about.component';
 
 import { MaterialModule } from 'src/app/material/material.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MaterialModule } from 'src/app/material/material.module';
     CommonModule,
     AboutRoutingModule,
     SharedModule,
-    MaterialModule
+    MaterialModule,
+    FontAwesomeModule
   ],
   exports: [
     SmartAboutComponent
