@@ -54,3 +54,14 @@ $candy-app-dark-theme: mat-dark-theme((
   color: #fb8c00;
   text-transform: uppercase;
 }
+
+
+.text-bold {
+  font-weight: bold;
+}
+
+.mat-card {
+  max-width: 1000px;
+  margin-bottom: 20px;
+  background: blue;
+}
