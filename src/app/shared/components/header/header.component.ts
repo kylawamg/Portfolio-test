@@ -20,9 +20,9 @@ export class HeaderComponent implements OnInit {
       route: 'projects'
     },
     {
-      label: 'Resume',
-      icon: 'school',
-      route: 'education'
+      label: 'Blog',
+      icon: 'article',
+      route: 'blog'
     },
   ];
 
