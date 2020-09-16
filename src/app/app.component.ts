@@ -1,6 +1,5 @@
 import { Component, HostBinding } from '@angular/core';
 import { OverlayContainer } from '@angular/cdk/overlay';
-import { DownloadLibrariesService } from './services/downloadLibraries.service'
 import { tsParticles } from "tsparticles";
 
 @Component({
@@ -13,8 +12,7 @@ export class AppComponent {
 
   @HostBinding('class') componentCssClass: any;
 
-  constructor(public overlayContainer: OverlayContainer,
-              private loadScripts: DownloadLibrariesService)
+  constructor(public overlayContainer: OverlayContainer,)
   {
     tsParticles.loadJSON("tsparticles", "../assets/particles.json")
     .then((container) => {
