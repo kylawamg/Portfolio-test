@@ -1,6 +1,7 @@
 import { Component, HostBinding } from '@angular/core';
 import { OverlayContainer } from '@angular/cdk/overlay';
 import { DownloadLibrariesService } from './services/downloadLibraries.service'
+import { tsParticles } from "tsparticles";
 
 @Component({
   selector: 'app-root',
@@ -15,8 +16,14 @@ export class AppComponent {
   constructor(public overlayContainer: OverlayContainer,
               private loadScripts: DownloadLibrariesService)
   {
-    loadScripts.loadScripts(["particles.min"]);
-    loadScripts.loadScripts(["app"]);
+    tsParticles.loadJSON("tsparticles", "../assets/particles.json")
+    .then((container) => {
+      console.log("callback - tsparticles config loaded");
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+
   }
 
   ngOnInit(): void {
