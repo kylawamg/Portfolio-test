@@ -14,7 +14,6 @@ import { SharedModule } from './shared/shared.module'
 import { MaterialModule } from './material/material.module';
 import { ProjectsModule } from './features/projects/projects.module';
 //Inicio services libraries
-import { DownloadLibrariesService } from './services/downloadLibraries.service';
 
 
 
@@ -32,7 +31,6 @@ import { DownloadLibrariesService } from './services/downloadLibraries.service';
     ProjectsModule
   ],
   providers: [
-    DownloadLibrariesService,
   ],
   bootstrap: [AppComponent]
 })
